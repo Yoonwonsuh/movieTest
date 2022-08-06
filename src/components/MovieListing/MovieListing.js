@@ -33,7 +33,6 @@ const MovieListing = () => {
       </div>
     );
 
-  console.log(renderMovies);
   return (
     <div className="movie-wrapper">
       <div className="movie-list">

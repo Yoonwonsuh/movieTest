@@ -13,7 +13,6 @@ export const fetchAsyncMovies = createAsyncThunk(
     return response.data;
   }
 );
-
 export const fetchAsyncShows = createAsyncThunk(
   "movies/fetchAsyncShows",
   async () => {
@@ -59,6 +58,5 @@ const movieSlice = createSlice({
 
 export const { addMovies } = movieSlice.actions;
 export const getAllMovies = (state) => state.movies.movies;
-export const AllMovies = (state) => state.movies.allmovies;
 export const getAllShows = (state) => state.movies.shows;
 export default movieSlice.reducer;
